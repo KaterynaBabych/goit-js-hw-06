@@ -15,16 +15,10 @@ const images = [
 
 const galleryLink = document.querySelector(".gallery");
 
-// console.log(galleryLink)
-
-// const makeGalleryList = images.forEach((image, index) => {
-  
-// return galleryLink.insertAdjacentHTML("beforeend", `<li><img src="${image[index].url} alt="${image[index].alt}"> </li>`);
-// });
-
 const makeGalleryList = images.map(image => {
-  return `<li class="container" ><img src="${image.url} alt="${image.alt}"> </li>`
+  return `<li><img class="size"src="${image.url} alt="${image.alt}"> </li>`
 })
+
 galleryLink.insertAdjacentHTML("beforeend", makeGalleryList);
 
 console.log(galleryLink);

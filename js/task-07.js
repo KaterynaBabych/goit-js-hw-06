@@ -4,6 +4,5 @@ const linkText = document.querySelector("#text");
 linkRange.addEventListener('input', onMouseMove);
 
 function onMouseMove(event) {
-    linkText.style.fontSize = event.currentTarget.value + "px";
-    
+    linkText.style.fontSize = event.currentTarget.value + "px"; 
 }

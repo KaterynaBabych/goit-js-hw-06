@@ -1,9 +1,7 @@
-const numbersOfcategoriesEl = document.querySelector("ul");
+const numbersOfcategoriesEl = document.querySelector("#categories");
 console.log(`Number of categories: ${numbersOfcategoriesEl.children.length}`)
 
-const titleEl = document.querySelector("#categories").children;
-// console.log(titleEl);
-for (const elem of titleEl) {
+for (const elem of numbersOfcategoriesEl.children) {
     const textItemEl = elem.firstElementChild.textContent;
     const numbersOfElements = elem.lastElementChild.children.length;
 console.log(`Category: ${textItemEl}, Elements: ${numbersOfElements}`) 

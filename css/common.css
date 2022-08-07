@@ -26,9 +26,11 @@ button {
 .gallery {
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
 }
 
 .size {
   width: 300px;
   height: 100%;
+  max-width: 100%;
 }

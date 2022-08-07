@@ -11,10 +11,14 @@ function onDataCollection(event) {
     if (email === "" || password === "") {
        return alert("Все поля должны быть заполнены!");
     } 
-    console.log(`email: ${email}, password: ${password}`);
     
-    event.currentTarget.reset();
+    const formData = {
+        email: email, password: password
+    }
 
+    console.log(formData)
+
+    event.currentTarget.reset();
 }
 
 
